@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # 2018-05-20 I aim to have this run in a while loop getting the camera frame
 
+
+### Warning this file has the the vector being computed for every facial feature point on every frame!
+### This is fixed in the other files
+
 from imutils.video import VideoStream
 from imutils import face_utils
 import argparse
