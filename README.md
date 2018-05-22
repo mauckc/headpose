@@ -36,7 +36,7 @@ Put this model file "shape_predictor_68_face_landmarks.dat" located in YOUR_MODE
 
  	cp YOUR_MODEL_DOWNLOAD_PATH/shape_predictor_68_face_landmarks.dat headpose/models/shape_predictor_68_face_landmarks.dat
 	
-Give privelages to run the shell script to start application
+Give privilages to run the shell script to start application
 
 	chmod +x run.sh
 
