@@ -94,7 +94,7 @@ while True:
 		# loop over the (x, y)-coordinates for the facial landmarks
 		# and draw each of them
         for (i, (x, y)) in enumerate(shape):
-            if i == 8:
+            if i == 33:
                 #something to our key landmarks
                 # save to our new key point list
                 # i.e. keypoints = [(i,(x,y))]
@@ -102,7 +102,7 @@ while True:
                 # write on frame in Green
 				cv2.circle(frame, (x, y), 1, (0, 255, 0), -1)
 				cv2.putText(frame, str(i + 1), (x - 10, y - 10),cv2.FONT_HERSHEY_SIMPLEX, 0.35, (0, 255, 0), 1)
-            elif i == 33:
+            elif i == 8:
                 #something to our key landmarks
                 # save to our new key point list
                 # i.e. keypoints = [(i,(x,y))]
