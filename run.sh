@@ -1,1 +1,1 @@
-python python/headpose.py -p models/shape_predictor_68_face_landmarks.dat
+python python/save-video-pose.py -p models/shape_predictor_68_face_landmarks.dat -v media/sample.mp4
