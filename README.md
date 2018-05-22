@@ -28,7 +28,13 @@ Open a terminal in the headpose directory and run (with sudo if needed on your s
 
 Now you should have installed the necessary packages
 
-	import PCV
+Give privelages to run the shell script to start application
+
+	chmod +x run.sh
+
+Then run the shell script
+
+        ./run.sh
 	
 in your Python session or script. Try one of the sample code examples to check that the installation works.
 
