@@ -28,6 +28,14 @@ Open a terminal in the headpose directory and run (with sudo if needed on your s
 
 Now you should have installed the necessary packages
 
+You still need to download dlib model file: "shape_predictor_68_face_landmarks.dat"
+
+This is a location where that file is hosted: https://github.com/AKSHAYUBHAT/TensorFace/blob/master/openface/models/dlib/shape_predictor_68_face_landmarks.dat
+
+Put this model file "shape_predictor_68_face_landmarks.dat" located in YOUR_MODEL_DOWNLOAD_PATH into the model folder headpose/models
+
+ 	cp YOUR_MODEL_DOWNLOAD_PATH/shape_predictor_68_face_landmarks.dat headpose/models/shape_predictor_68_face_landmarks.dat
+	
 Give privelages to run the shell script to start application
 
 	chmod +x run.sh
