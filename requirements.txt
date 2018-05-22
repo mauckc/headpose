@@ -1,1 +1,4 @@
 dlib
+numpy
+opencv-python
+imutils
