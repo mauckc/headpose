@@ -34,7 +34,7 @@ Give privelages to run the shell script to start application
 
 Then run the shell script
 
-        ./run.sh
+	./run.sh
 	
 in your Python session or script. Try one of the sample code examples to check that the installation works.
 
