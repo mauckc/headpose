@@ -24,6 +24,10 @@ Some parts use:
 
 *media/*  contains images and video. 
 
+<p align="center">
+  <img src="https://github.com/mauckc/headpose/blob/master/media/elon-sample.gif"/>
+</p>
+
 ### Installation
 
 Open a terminal in the headpose directory and run (with sudo if needed on your system):
