@@ -56,10 +56,11 @@ in your Python session or script. Try one of the sample code examples to check t
 </p>
 
 For good resources on these topics see:
-* detecting face landmarks: Adrian Rosebrock implementation of dlib's shape_predictor's for face landmark detection
-* pose estimation: Satya Mallick's implementation of OpenCV's PnP function
-[Pose Estimation](https://www.learnopencv.com/head-pose-estimation-using-opencv-and-dlib/)
-[Face Landmark Detection](https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/)
+*[Face Landmark Detection](https://www.learnopencv.com/head-pose-estimation-using-opencv-and-dlib/) detecting face landmarks: Adrian Rosebrock
+implementation of dlib's shape_predictor's for face landmark detection
+*[Pose Estimation](https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/) pose estimation: Satya Mallick's implementation of OpenCV's PnP function
+
+
 ### License
 
 All code in this project is provided as open source under the MIT license
