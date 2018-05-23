@@ -2,10 +2,10 @@
 Process camera feed for head pose estimation is a Python application for computer vision live face parameterization based on Adrian Rosebrock and Satya Mallick
 
 ### Dependencies
-You need to have Python 2.6+ and as a minimum:
+You need to have Python 2.6+ as a minimum and:
 
 * [NumPy](http://numpy.scipy.org/)
-* [OpenCV3](http://opencv.org/)
+* [OpenCV 3](http://opencv.org/) Prefer OpenCV 3.4+
 * [Dlib](http://dlib.net/)
 
 Some parts use:
