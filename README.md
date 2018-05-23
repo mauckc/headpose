@@ -24,10 +24,6 @@ Some parts use:
 
 *media/*  contains images and video. 
 
-<p align="center">
-  <img src="https://github.com/mauckc/headpose/blob/master/media/elon-sample.gif"/>
-</p>
-
 ### Installation
 
 Open a terminal in the headpose directory and run (with sudo if needed on your system):
@@ -53,6 +49,10 @@ Then run the shell script
 	./run.sh
 	
 in your Python session or script. Try one of the sample code examples to check that the installation works.
+
+<p align="center">
+  <img src="https://github.com/mauckc/headpose/blob/master/media/elon-sample.gif"/>
+</p>
 
 ### License
 
