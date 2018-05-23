@@ -6,7 +6,7 @@ You need to have Python 2.6+ and as a minimum:
 
 * [NumPy](http://numpy.scipy.org/)
 * [OpenCV3](http://opencv.org/)
-* [Dlib] (http://dlib.net/)
+* [Dlib](http://dlib.net/)
 
 Some parts use:
 
