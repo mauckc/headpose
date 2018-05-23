@@ -55,9 +55,9 @@ in your Python session or script. Try one of the sample code examples to check t
   <img src="https://github.com/mauckc/headpose/blob/master/media/elon-sample.gif"/>
 </p>
 
-For good resources on these topics
-detecting face landmarks: Adrian Rosebrock implementation of dlib's shape_predictor's for face landmark detection
-pose estimation: Satya Mallick's implementation of OpenCV's PnP function
+For good resources on these topics see:
+* detecting face landmarks: Adrian Rosebrock implementation of dlib's shape_predictor's for face landmark detection
+* pose estimation: Satya Mallick's implementation of OpenCV's PnP function
 
 ### License
 
