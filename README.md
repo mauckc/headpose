@@ -1,10 +1,6 @@
 ## About headpose
 Process camera feed for head pose estimation is a Python application for computer vision live face parameterization based on Adrian Rosebrock and Satya Mallick
 
-<p align="center">
-  <img src="https://github.com/mauckc/headpose/blob/master/media/obama-sample.gif"/>
-</p>
-
 ### Dependencies
 You need to have Python 2.6+ and as a minimum:
 
@@ -14,6 +10,10 @@ You need to have Python 2.6+ and as a minimum:
 Some parts use:
 
 * [Imutils](https://github.com/jrosebr1/imutils)
+
+<p align="center">
+  <img src="https://github.com/mauckc/headpose/blob/master/media/obama-sample.gif"/>
+</p>
 
 ### Structure
 
