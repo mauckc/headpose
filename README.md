@@ -1,5 +1,5 @@
 ## About headpose
-Process camera feed for head pose estimation is a Python application for computer vision live face parameterization based on Adrian Rosebrock and Satya Mallick
+Process camera feed for head pose estimation is a Python application for computer vision live face parameterization For good resources on detecting face landmarks see Adrian Rosebrock and for pose estimation see Satya Mallick
 
 ### Dependencies
 You need to have Python 2.6+ as a minimum and:
