@@ -1,5 +1,5 @@
 ## About headpose
-Process camera feed for head pose estimation is a Python application for computer vision live face parameterization For good resources on detecting face landmarks see Adrian Rosebrock and for pose estimation see Satya Mallick
+Process camera feed for head pose estimation is a Python application for computer vision live face parameterization
 
 ### Dependencies
 You need to have Python 2.6+ as a minimum and:
@@ -54,6 +54,10 @@ in your Python session or script. Try one of the sample code examples to check t
 <p align="center">
   <img src="https://github.com/mauckc/headpose/blob/master/media/elon-sample.gif"/>
 </p>
+
+For good resources on these topics
+detecting face landmarks: Adrian Rosebrock implementation of dlib's shape_predictor's for face landmark detection
+pose estimation: Satya Mallick's implementation of OpenCV's PnP function
 
 ### License
 
