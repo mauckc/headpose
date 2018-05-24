@@ -63,6 +63,13 @@ Detecting face landmarks: Adrian Rosebrock implementation of dlib's shape_predic
 Pose estimation: Satya Mallick's implementation of OpenCV's PnP function
 *[Pose Estimation](https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/) 
 
+Using this and this 
+to get this information
+
+and this to take that information which would produce this output.
+
+I wanted to write a graphics pipeline that would produce this in th
+I did this
 
 ### License
 
@@ -71,3 +78,5 @@ All code in this project is provided as open source under the MIT license
 
 ---
 -Ross Mauck
+
+
