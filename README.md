@@ -7,13 +7,10 @@ You need to have Python 2.6+ as a minimum and:
 * [NumPy](http://numpy.scipy.org/)
 * [OpenCV 3](http://opencv.org/) Prefer OpenCV 3.4+
 * [Dlib](http://dlib.net/)
-
-Some parts use:
-
 * [Imutils](https://github.com/jrosebr1/imutils)
 
 <p align="center">
-  <img src="https://github.com/mauckc/headpose/blob/master/media/obama-sample.gif"/>
+  <img src="https://github.com/mauckc/headpose/blob/master/media/elon-sample.gif"/>
 </p>
 
 ### Structure
@@ -51,10 +48,6 @@ Then run the shell script
 	
 in your Python session or script. Try one of the sample code examples to check that the installation works.
 
-<p align="center">
-  <img src="https://github.com/mauckc/headpose/blob/master/media/elon-sample.gif"/>
-</p>
-
 For good resources on these topics see:
 
 Detecting face landmarks: Adrian Rosebrock implementation of dlib's shape_predictor's for face landmark detection
@@ -70,6 +63,10 @@ and this to take that information which would produce this output.
 
 I wanted to write a graphics pipeline that would produce this in th
 I did this
+
+<p align="center">
+  <img src="https://github.com/mauckc/headpose/blob/master/media/obama-sample.gif"/>
+</p>
 
 ### License
 
