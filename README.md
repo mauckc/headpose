@@ -20,7 +20,7 @@ Some parts use:
 
 *python/*  the code.
 
-*models/*  ontains the models used in this example we use Facial Landmark detection 68 points.
+*models/*  contains the models used in this example we use Facial Landmark detection 68 points.
            *one must download shape_detector_68_facial_landmarks.dat because it is too large a file to host here.
 
 *media/*  contains images and video. 
