@@ -59,12 +59,12 @@ time.sleep(2.0)
 # loop over the frames from the video stream
 #2D image points. If you change the image, you need to change vector
 image_points = np.array([
-                            (359, 391),     # Nose tip 34
-                            (399, 561),     # Chin 9
-                            (337, 297),     # Left eye left corner 37
-                            (513, 301),     # Right eye right corne 46
+                            (355, 391),     # Nose tip 34
+                            (389, 541),     # Chin 9
+                            (327, 227),     # Left eye left corner 37
+                            (533, 301),     # Right eye right corne 46
                             (345, 465),     # Left Mouth corner 49
-                            (453, 469)      # Right mouth corner 55
+                            (455, 415)      # Right mouth corner 55
                         ], dtype="double")
 
 # 3D model points.
