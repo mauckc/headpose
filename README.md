@@ -1,6 +1,13 @@
 ## About headpose
 Process camera feed for head pose estimation is a Python application for computer vision live face parameterization
 
+Using dlib's face landmark predictor, I added my implementation of a real-time by building a graphics pipeline to support the 2D to 3D head pose estimation method built by Satya Mallick in the referenced code below.
+
+---
+### Referenced Code
+* https://www.learnopencv.com/head-pose-estimation-using-opencv-and-dlib
+* https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python
+
 ### Dependencies
 You need to have Python 2.6+ as a minimum and:
 
