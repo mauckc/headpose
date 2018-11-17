@@ -9,6 +9,16 @@ import time
 import dlib
 import cv2
 import numpy as np
+from picamera.array import PiRGBArray
+from picamera import PiCamera
+
+# initialize the camera and grab a refeerence to the raw camera capture
+camera = PiCamera()
+camera.resolution = (640, 480)
+camera.framerate = 32
+rawCapture = PiRGBArray(camera, size=(640, 480))
+
+time.sleep(0.1)
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
@@ -26,13 +36,13 @@ predictor = dlib.shape_predictor(args["shape_predictor"])
 # camera sensor to warm up
 print("[INFO] camera sensor warming up...")
 
-vs = VideoStream(src=0).start()
+#vs = VideoStream(src=0).start()
 # vs = VideoStream(usePiCamera=True).start() # Raspberry Pi
 time.sleep(2.0)
 
 # 400x225 to 1024x576
-frame_width = 1024
-frame_height = 576
+frame_width = 400
+frame_height = 225
 
 # Define the codec and create VideoWriter object.The output is stored in 'outpy.avi' file.
 #out = cv2.VideoWriter('outpy.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 30, (frame_width,frame_height))
@@ -40,12 +50,12 @@ frame_height = 576
 # loop over the frames from the video stream
 #2D image points. If you change the image, you need to change vector
 image_points = np.array([
-                            (359, 391),     # Nose tip 34
-                            (399, 561),     # Chin 9
+                            (259, 291),     # Nose tip 34
+                            (399, 261),     # Chin 9
                             (337, 297),     # Left eye left corner 37
                             (513, 301),     # Right eye right corne 46
-                            (345, 465),     # Left Mouth corner 49
-                            (453, 469)      # Right mouth corner 55
+                            (345, 265),     # Left Mouth corner 49
+                            (453, 269)      # Right mouth corner 55
                         ], dtype="double")
 
 # 3D model points.
@@ -59,14 +69,12 @@ model_points = np.array([
 
                         ])
 
-while True:
-        # grab the frame from the threaded video stream, resize it to
-        # have a maximum width of 400 pixels, and convert it to
-        # grayscale
-        frame = vs.read()
-        frame = imutils.resize(frame, width=1024, height=576)
+for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
+        image = frame.array
+        frame = imutils.resize(image, width=frame_width, height=frame_height)
+        frame = cv2.flip(frame,1)
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        size = gray.shape
+        size = frame.shape
 
         # detect faces in the grayscale frame
         rects = detector(gray, 0)
@@ -167,15 +175,22 @@ while True:
                         cv2.line(frame, p1, p2, (255,0,0), 2)
 
         # show the frame
-        cv2.imshow("Frame", frame)
+        (h,w) = frame.shape[:2]
+        center = (w / 2, h / 2)
+        M = cv2.getRotationMatrix2D(center, 180, 1.0)
+        rotated = cv2.warpAffine(frame, M, (w,h))
+        
+        cv2.imshow("rotated", rotated)
         key = cv2.waitKey(1) & 0xFF
-
+        
+        # clear the stream for the next frame
+        rawCapture.truncate(0)
         # if the `q` key was pressed, break from the loop
         if key == ord("q"):
                 break
-#
+
 print(image_points)
 
 # do a bit of cleanup
 cv2.destroyAllWindows()
-vs.stop()
+#vs.stop()
