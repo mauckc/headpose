@@ -1,4 +1,5 @@
-wget https://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
-bzip2 -vd shape_predictor_68_face_landmarks.dat.bz2
-mkdir -vp models
-mv -v shape_predictor_68_face_landmarks.dat models
+from subprocess import call
+
+call(['wget', 'https://github.com/AKSHAYUBHAT/TensorFace/blob/master/openface/models/dlib/shape_predictor_68_face_landmarks.dat'])
+call(['mkdir', '-vp', 'models'])
+call(['mv', '-v', 'shape_predictor_68_face_landmarks.dat', 'models'])
